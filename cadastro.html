@@ -20,32 +20,43 @@
             <li><a href="autor.html">Sobre o Autor</a></li>
       </ul>
     </nav>
+  </header>
 
-    <main>
-        <section>
-            <h2 style="color:rgb(50, 0, 90)">Serviços</h2>
+  <main>
+    <h2>Administração</h2>
+    <h2>Cadastro de Documentos</h2>
 
-            <article>
-                <img src="IMAGENS/planejamento.png" alt="Planejamento" width="80" height="80">
-                <h3 style="color:rgb(50, 0, 90);">Planejamento de Obras</h3>
-            </article>
+    <form>
+      <label for="nome">Documento:</label>
+      <input type="text" id="nome" name="nome" required>
 
-            <article>
-                <img src="IMAGENS/projetos.png" alt="Projetos" width="80" height="80">
-                <h3 style="color:rgb(50, 0, 90);">Desenvolvimento de Projetos</h3>
-            </article>
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" name="descricao"></textarea>
 
-            <article>
-                 <img src="IMAGENS/execução.png" alt="Execução" width="80" height="80">
-                <h3 style="color:rgb(50, 0, 90);">Execução de Obras</h3>
-            </article>
+      <button type="submit">Salvar</button>
+    </form>
 
-            <article>
-                <img src="IMAGENS/avaliação.png" alt="Avaliação" width="80" height="80">
-                <h3 style="color:rgb(50, 0, 90);">Avaliação e Perícia de Imóveis</h3>
-            </article>
-        </section>
-    </main>
+    <h3>Lista de Documentos Cadastrados</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Descrição</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Projeto Hidrossanitário</td>
+          <td>Água fria, rede de água e esgoto, sanitário e drenagem de águas pluviais</td>
+          <td>
+            <button>Editar</button>
+            <button>Apagar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
 
     <footer>
         <p>Desenvolvido por Mariane Mendes | <a href="autor.html">Sobre o autor</a></p>
